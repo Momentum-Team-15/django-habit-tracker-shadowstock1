@@ -18,6 +18,7 @@ env = environ.Env(
     DEBUG=(bool, False),
     RENDER=(bool, False)
 )
+
 environ.Env.read_env() #tells where to find .env file
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
