@@ -10,6 +10,8 @@ django-extensions = "*"
 django-environ = "*"
 django-debug-toolbar = "*"
 django-registration-redux = "*"
+whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
