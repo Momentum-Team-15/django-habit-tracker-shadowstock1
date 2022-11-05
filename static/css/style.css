@@ -1,0 +1,24 @@
+body{
+    margin:0;
+}
+
+.habit_display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    width: 95%;
+    border-radius: 2em;
+}
+
+.habit_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row;
+    align-items: center;
+    text-align: center;
+    height: 6cm;
+    width: 4cm;
+    border: 2px solid black;
+    align-items: center;
+}

@@ -1,5 +1,19 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
+
 
 <h2>This is my Index Page</h2>
 
+<h2>Habits you are currently tracking:</h2>
+    
+<div class="habit_display">
+    {% for habit in habits %}
+        <div class="habit_card">
+            <p><a href="{% url 'habit_detail' pk=habit.pk %}"> {{ habit.name }}</a></p>
+            <p>{{ habit.metric }}</p>
+            <p>{{ habit.unit_of_measure }}</p>
+            <p>{{ habit.date_created }}</p>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
